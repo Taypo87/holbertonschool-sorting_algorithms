@@ -43,7 +43,7 @@ void swap_tail(listint_t *aux)
 	aux->next = aux->prev;
 	aux->prev->prev->next = aux;
 	aux->prev = aux->next->prev;
-	aux->next-prev = aux;
+	aux->next->prev = aux;
 }
 
 /**
